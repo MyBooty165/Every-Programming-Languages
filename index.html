@@ -1,10 +1,15 @@
-<DOCTYPE HTML>
-  <html>
-    <head>
-      <title>All Programming Languages</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-<p class=txt>Hello World!</p>
-    </body>
-  </html>
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>All Programming Languages</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function changeText() {
+        document.querySelector('.txt').innerHTML = 'This is the new text!';
+      }
+    </script>
+  </head>
+  <body onload="changeText()">
+    <p class="txt">Hello World!</p>
+  </body>
+</html>
